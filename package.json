@@ -1,16 +1,18 @@
 {
-  "name": "john-homepage",
+  "name": "homepage",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
   "author": {
-    "name": "John Schmidt",
-    "email": "mail@johnschmidt.de"
+    "name": "Ryan Lisse",
+    "email": "ryan@ryanlisse.com"
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "sanity build public -y",
+    "start": "next start",
+    "startnow": "sanity start",
+    "test": "sanity check"
   },
   "dependencies": {
     "@headlessui/react": "^0.3.1",
@@ -37,6 +39,11 @@
     "use-reading-time": "^0.2.0"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@sanity/cli": "^2.2.6",
+    "lerna": "^3.22.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.5.2"
   }
 }
