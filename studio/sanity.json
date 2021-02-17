@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "3upg0yrc",
+    "dataset": "production"
+  },
   "project": {
     "name": "John Schmidt"
-  },
-  "api": {
-    "projectId": "placeholder",
-    "dataset": "placeholder"
   },
   "plugins": [
     "@sanity/base",
