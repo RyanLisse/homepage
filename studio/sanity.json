@@ -6,6 +6,7 @@
   },
   "project": {
     "name": "Ryan Lisse"
+    "name": "John Schmidt"
   },
   "plugins": [
     "@sanity/base",
