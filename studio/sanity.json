@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "John Schmidt"
-  },
   "api": {
-    "projectId": "placeholder",
-    "dataset": "placeholder"
+    "projectId": "3upg0yrc",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "Ryan Lisse"
   },
   "plugins": [
     "@sanity/base",
@@ -13,13 +13,12 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "@sanity/code-input"
+    "@sanity/code-input",
+    "@sanity/production-preview"
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
@@ -38,6 +37,10 @@
     {
       "name": "part:@sanity/base/initial-value-templates",
       "path": "./initialValueTemplates.js"
+    },
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "studio/resolveProductionUrl.js"
     }
   ]
 }

@@ -1,16 +1,18 @@
 {
-  "name": "john-homepage",
+  "name": "Ryan-homepage",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
   "author": {
-    "name": "John Schmidt",
-    "email": "mail@johnschmidt.de"
+    "name": "Ryan Lisse",
+    "email": "ryan@ryanlisse.com"
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "sanity build public -y",
+    "start": "next start",
+    "startnow": "sanity start",
+    "test": "sanity check"
   },
   "dependencies": {
     "@headlessui/react": "^0.3.1",
