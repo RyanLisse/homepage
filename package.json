@@ -1,5 +1,5 @@
 {
-  "name": "Ryan-homepage",
+  "name": "homepage",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
@@ -39,6 +39,11 @@
     "use-reading-time": "^0.2.0"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@sanity/cli": "^2.2.6",
+    "lerna": "^3.22.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.5.2"
   }
 }

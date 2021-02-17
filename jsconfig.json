@@ -2,5 +2,5 @@
   "compilerOptions": {
     "baseUrl": "."
   },
-  "exclude": ["node_modules", "studio"]
+  "exclude": ["node_modules"]
 }
